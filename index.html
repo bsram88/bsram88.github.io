@@ -29,22 +29,26 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
+    
+    <script
+			  src="https://code.jquery.com/jquery-2.2.1.js"
+			  integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc="
+			  crossorigin="anonymous"></script>
+
 </head>
 <body>
-
-
     
     <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       
-      <div class="me-auto"><img src="assets/img/logo_main.svg" alt="RBCDSAI" height="50px"></div>
+      <div class="me-auto"><a href="index.html"><img src="assets/img/logo_main.svg" alt="RBCDSAI" height="50px"></a></div>
       
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
+        <ul class="navitem">
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="#people">People</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -52,7 +56,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="courses.html" class="get-started-btn">Get Started</a>
+      <a href="#main" class="get-started-btn">Get Started</a>
 
     </div>
   </header><!-- End Header -->
@@ -148,13 +152,13 @@
   </div>
 
   <section id="people" class="people">
-    <div class="container " data-aos="fade-up">
-      <div class="row" data-aos="zoom-in" data-aos-delay="100">
+    <div class="container aos-init aos-animate" >
+      <div class="row" >
         <div class="section-title">
           <p>PEOPLE<i class="abc"></i></p>
         </div>      
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="member"  data-tilt data-tilt-glare data-tilt-max-glare="1.0">
+          <div class="member" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-glare data-tilt-max-glare="1.0" >
             <img src="assets/img/arunrajkumar.jpg" class="img-fluid" alt="">
             <div class="member-content">
               <h4>Arun Rajkumar</h4>
@@ -178,7 +182,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="member"  data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="member" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-glare data-tilt-max-glare="1.0" >
             <img src="assets/img/BalaramanRavindran.jpg" class="img-fluid" alt="">
             <div class="member-content">
               <h4>Balaraman Ravindran</h4>
@@ -196,7 +200,7 @@
         </div>
         
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="member"  data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="member" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-glare data-tilt-max-glare="1.0" >
             <img src="assets/img/GitakrishnanRamadurai.png" class="img-fluid" alt="">
             <div class="member-content">
               <h4>Gitakrishnan Ramadurai</h4>
@@ -214,7 +218,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="member"  data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="member" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-glare data-tilt-max-glare="1.0" >
             <img src="assets/img/Karthik Raman.jpg" class="img-fluid" alt="">
             <div class="member-content">
               <h4>Karthik Raman</h4>
@@ -238,7 +242,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="member"  data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="member" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-glare data-tilt-max-glare="1.0" >
             <img src="assets/img/Nandan Sudarsanam.png" class="img-fluid" alt="">
             <div class="member-content">
               <h4>Nandan Sudarsanam</h4>
@@ -256,7 +260,7 @@
         </div>
         
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="member"  data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="member" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-glare data-tilt-max-glare="1.0" >
             <img src="assets/img/Raghunathan Rengaswamy.jpg" class="img-fluid" alt="">
             <div class="member-content">
               <h4>Raghunathan Rengaswamy</h4>
@@ -305,20 +309,20 @@
                 <!-- Project - 1 -->
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-4" style="--clr:#FF6755">
-                    <i class="svg goodai"></i>
+                    <i class="svg good_ai"></i>
                       <h4>Fair/Social good in AI</h4>
-                    <button class="button">View more</button>
+                    <a class="button" href="projects.html">View more</a>
                     <div class="projects-bottom">
-                      <p>Data, in the real world, often carries a lot of previously held racial, gender-specific, community-specific biases and these biases creep into the algorithms/models</p>
+                      <p>Data, in the real world, often carries a lot of previously held racial, gender-specific, community-specific biases and these biases creep into the algorithms/models which train on the data.</p>
                     </div>
                   </div>
                 </div>
                 <!-- Project - 2 -->
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-4" style="--clr:#0093D3">
-                    <i class="svg goodai"></i>
+                    <i class="svg explainable_ai"></i>
                     <h4>Explainable AI</h4>
-                    <button class="button">View more</button>
+                    <a class="button" href="projects.html#explainable_ai">View more</a>
                     <div class="projects-bottom">
                       <p>The recent tremendous success in ML/AI is attributed to the advent of deep learning algorithms. While these algorithms have performed extremely well in NLP, Vision, Speech</p>
                     </div>
@@ -327,9 +331,9 @@
                 <!-- Project - 3 -->
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-4" style="--clr:#EAB301">
-                    <i class="svg goodai"></i>
+                    <i class="svg transferable_ai"></i>
                     <h4>Transferable AI</h4>
-                    <button class="button">View more</button>
+                    <a class="button" href="projects.html#transferable_ai">View more</a>
                     <div class="projects-bottom">
                       <p>The performance of ML/AI algorithms depend crucially on the distributions from which data arrives. Real-world data often exhibit the phenomenon of data drift and AI/ML algorithms</p>
                     </div>
@@ -338,9 +342,9 @@
                 <!-- Project - 4 -->
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-4" style="--clr:#2DA454">
-                    <i class="svg goodai"></i>
+                    <i class="svg private_ai"></i>
                     <h4>Private and Safe AI</h4>
-                    <button class="button">View more</button>
+                    <a class="button" href="projects.html#private_ai">View more</a>
                     <div class="projects-bottom">
                       <p>Every prediction of a machine learning algorithm can potentially leak information about the underlying model. Furthermore, even if the end-user is reliable, there may be several types of privacy attacks</p>
                     </div>
@@ -349,9 +353,9 @@
                 <!-- Project - 5 -->                
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-4" style="--clr:#F50057">
-                    <i class="svg goodai"></i>
+                    <i class="svg edge_ai"></i>
                     <h4>AI for Edge</h4>
-                    <button class="button">View more</button>
+                    <a class="button" href="projects.html#edge_ai">View more</a>
                     <div class="projects-bottom">
                       <p>Several user centric applications can benefit if deep learning algorithms can be run on the edge. However, at the moment this seems a challenge because of hardware and software restrictions.</p>
                     </div>
@@ -378,45 +382,26 @@
       <div class="container">
         <div class="row">
           
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-4 footer-contact">
             <img src="assets/img/logo_main.svg" alt="RBCDSAI" height="100px"/>
-            <br/><br/>
+            
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-contact">
             <h3> <strong> Deployable Artificial Intelligence </strong> </h3>
             <p>
               IIT Madras,<br/>
               Chennai 600 036, India.
-              
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-2 col-md-2 footer-links">
             <h4>Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="#people">People</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="#projects">Projects</a></li>
             </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
           </div>
 
         </div>
