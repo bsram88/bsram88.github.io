@@ -9,46 +9,264 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+        
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: #444444;
+    }
 
-  <!-- =======================================================
-  * Template Name: OnePage - v4.7.0
-  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    /*--------------------------------------------------------------
+    # Disable aos animation delay on mobile devices
+    --------------------------------------------------------------*/
+    @media screen and (max-width: 768px) {
+      [data-aos-delay] {
+        transition-delay: 0 !important;
+      }
+    }
+    /*--------------------------------------------------------------
+    # Clients
+    --------------------------------------------------------------*/
+    .clients {
+      padding: 25px 0;
+      text-align: center;
+    }
+    .clients img {
+      max-width: 45%;
+      max-height: 75px;
+      transition: all 0.4s ease-in-out;
+      display: inline-block;
+      padding: 2px 0;
+    }
+    .clients img:hover {
+      filter: none;
+      transform: scale(1.15);
+    }
+    @media (max-width: 768px) {
+      .clients img {
+        max-width: 40%;
+      }
+    }
+
+    section {
+      padding-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .section-bg {
+      background-color: #F5FBFD;
+    }
+
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .section-title h2 {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      padding-bottom: 0;
+      color: #E62F31;
+    }
+    .section-title h3 {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      padding-bottom: 0;
+      color: #124265;
+    }
+
+    .section-title p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #919191;
+    }
+
+    /*--------------------------------------------------------------
+    # Pricing
+    --------------------------------------------------------------*/
+
+    .pricing{
+      background-color: #FAFAFA;
+      padding-top: 50px;
+    }
+
+    .pricing .box {
+      margin: 10px 10px;
+      text-align: center;
+      border-radius: 10px;
+      border-bottom:4px solid #124265;
+      position: relative;
+      overflow: hidden;
+      background: #fefefe;
+      box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    /* silver */
+    .pricing .box h3 {
+      font-weight: 400;
+      padding: 20px;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #777777;
+      background-color: #e8e8ee;
+    }
+
+    /* platinum */
+    .pricing .box h2 {
+      font-weight: 400;
+      padding: 20px;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #fff;
+      background-color: #082941;
+    }
+
+
+    .pricing .box h4 {
+      font-size: 42px;
+      color: #2487ce;
+      font-weight: 600;
+      font-family: "Open Sans", sans-serif;
+      margin: 25px 0;
+    }
+    .pricing .box h4 sup {
+      font-size: 20px;
+      top: -15px;
+      left: -3px;
+    }
+    .pricing .box h4 span {
+      color: #2487ce;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .pricing .box h4 span.age {
+      color: #777777;
+      font-size: 16px;
+      font-weight: 500;
+      display:block;
+    }
+
+    .pricing .box ul {
+      padding: 0;
+      list-style: none;
+      color: #124265;
+      text-align: left;
+      line-height: 20px;
+      font-size: 14px;
+    }
+    .pricing .box ul li {
+      padding: 10px 30px;
+    }
+    .pricing .box ul li::before {
+      content: url(assets/img/tick.svg);
+      vertical-align: -0.3em;
+      margin-right: 5px;
+    }
+
+    .pricing .box ul .na {
+      color: #ccc;
+      text-decoration: line-through;
+    }
+    .pricing .box .btn-wrap {
+      padding: 15px;
+      text-align: center;
+    }
+    .pricing .box .btn-buy {
+      display: inline-block;
+      padding: 10px 40px;
+      border-radius: 4px;
+      color: #2487ce;
+      transition: none;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      transition: 0.3s;
+      border: 2px solid #2487ce;
+    }
+    .pricing .box .btn-buy:hover {
+      background: #2487ce;
+      color: #fff;
+    }
+    .pricing .featured {
+      background: #205b85;
+    }
+    .pricing .featured h3, .pricing .featured h4, .pricing .featured h4 span, .pricing .featured ul, .pricing .featured ul .na {
+      color: #fff;
+    }
+    .pricing .featured .btn-wrap {
+      padding: 15px;
+      text-align: center;
+    }
+    .pricing .featured .btn-buy {
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    .pricing .featured .btn-buy:hover {
+      background: #fff;
+      color: #2487ce;
+    }
+
+    .pricing .box.platinum h3{
+      color: #fff;
+      background-color: #124265;
+    }
+
+    .pricing .section-title span{
+      color: #fff;
+      background-color: #860064;
+      font-size: 18px;
+      padding: 15px 25px;
+      border-radius: 50px;
+    }
+
+    #header .section-title {
+      padding: 25px;
+      background: linear-gradient(127deg,#FF265B, #FF4E32);
+    }
+
+    #header .section-title h1 {
+      font-size: 36px;
+      color: #fff;
+    }
+
+
+    #header p span{
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    #clients .section-title h2 span ,#clients .section-title h3 span{
+      background-color: #fff;
+      border-radius: 50px;
+      font-size: 18px;
+      padding: 15px 30px;
+    }
+
+
+  </style>
+
 </head>
 
 <body>
 
-
   <main id="main">
-
     <section id="header">
       <div class="section-title">
         <h1> <strong>RBCDSAI</strong>
           CONSORTIUM</h1>
       </div>
       <div class="container">
-        
-        <div class="row mt-5">
+        <div class="row mt-4">
           <h2>RBCDSAI Consortium Membership</h2>
           <div class="col-lg-4 text-center">
             <br>
@@ -72,24 +290,24 @@
     <section id="clients" class="clients section-bg">
       <div class="container">
         <div class="section-title">
-          <h2>Our Platinum Members</h2>
+          <h2><span>Our Platinum Members</span></h2>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center justify-content-center" >
             <img src="assets/img/platinum/Wells_Fargo_Logo.svg.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center justify-content-center" >
             <img src="assets/img/platinum/bosch.jpg" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center justify-content-center" >
             <img src="assets/img/platinum/Tredence.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center justify-content-center" >
             <img src="assets/img/platinum/mindtree-logo.png" class="img-fluid" alt="">
           </div>
 
@@ -99,20 +317,20 @@
       <br/>
       <div class="container silver">
         <div class="section-title">
-          <h3>Our Silver Members</h3>
+          <h3><span>Our Silver Members</span></h3>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center" >
             <img src="assets/img/silver/Kantar.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center" >
             <img src="assets/img/silver/nms2_logob.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center" >
             <img src="assets/img/silver/PayPal-Logo.png" class="img-fluid" alt="">
           </div>
 
@@ -127,7 +345,7 @@
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
+      <div class="container" >
 
         <div class="section-title">
           <h2><span>Subscriptions</span></h2>
@@ -136,7 +354,7 @@
 
         <div class="row">
 
-          <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center" data-aos="zoom-im" data-aos-delay="100">
+          <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
             <div class="box">
               <h3>Silver</h3>
               <h4>
@@ -159,7 +377,7 @@
             </div>
           </div>
           <!-- mt-4 mt-md-0 -->
-          <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center" data-aos="zoom-im" data-aos-delay="100">
+          <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
             <div class="box platinum">
               <h3>Platinum</h3>
               <h4>
@@ -191,23 +409,7 @@
       </div>
     </section><!-- End Pricing Section -->
 
-
-
   </main><!-- End #main -->
-
-
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 

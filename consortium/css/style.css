@@ -1,0 +1,242 @@
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  padding: 25px 0;
+  text-align: center;
+}
+.clients img {
+  max-width: 45%;
+  max-height: 75px;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 2px 0;
+}
+.clients img:hover {
+  filter: none;
+  transform: scale(1.15);
+}
+@media (max-width: 768px) {
+  .clients img {
+    max-width: 40%;
+  }
+}
+
+section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #F5FBFD;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+  color: #E62F31;
+}
+.section-title h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+  color: #124265;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #919191;
+}
+
+
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+
+.pricing{
+  background-color: #FAFAFA;
+}
+
+.pricing .box {
+  margin: 10px 10px;
+  text-align: center;
+  border-radius: 10px;
+  border-bottom:4px solid #124265;
+  position: relative;
+  overflow: hidden;
+  background: #fefefe;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* silver */
+.pricing .box h3 {
+  font-weight: 400;
+  padding: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #777777;
+  background-color: #e8e8ee;
+}
+
+/* platinum */
+.pricing .box h2 {
+  font-weight: 400;
+  padding: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  background-color: #082941;
+}
+
+
+.pricing .box h4 {
+  font-size: 42px;
+  color: #2487ce;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin: 25px 0;
+}
+.pricing .box h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+.pricing .box h4 span {
+  color: #2487ce;
+  font-size: 16px;
+  font-weight: 500;
+}
+.pricing .box h4 span.age {
+  color: #777777;
+  font-size: 16px;
+  font-weight: 500;
+  display:block;
+}
+
+.pricing .box ul {
+  padding: 0;
+  list-style: none;
+  color: #124265;
+  text-align: left;
+  line-height: 20px;
+  font-size: 14px;
+}
+.pricing .box ul li {
+  padding: 10px 30px;
+}
+.pricing .box ul li::before {
+  content: url(../img/tick.svg);
+  vertical-align: -0.3em;
+  margin-right: 5px;
+}
+
+.pricing .box ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+.pricing .box .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+.pricing .box .btn-buy {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 4px;
+  color: #2487ce;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 2px solid #2487ce;
+}
+.pricing .box .btn-buy:hover {
+  background: #2487ce;
+  color: #fff;
+}
+.pricing .featured {
+  background: #205b85;
+}
+.pricing .featured h3, .pricing .featured h4, .pricing .featured h4 span, .pricing .featured ul, .pricing .featured ul .na {
+  color: #fff;
+}
+.pricing .featured .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+.pricing .featured .btn-buy {
+  color: #fff;
+  border: 2px solid #fff;
+}
+.pricing .featured .btn-buy:hover {
+  background: #fff;
+  color: #2487ce;
+}
+
+.pricing .box.platinum h3{
+  color: #fff;
+  background-color: #124265;
+}
+
+.pricing .section-title span{
+  color: #fff;
+  background-color: #860064;
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 50px;
+}
+
+#header .section-title {
+  padding: 25px;
+  background: linear-gradient(127deg,#FF265B, #FF4E32);
+}
+
+#header .section-title h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+
+#header p span{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#clients .section-title h2 span ,#clients .section-title h3 span{
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
